@@ -1,0 +1,76 @@
+
+/* ========== START OF TABLE STYLING============= */
+
+.inspo-statistic-image {
+	height: 120px;
+	width: 100px;
+	object-fit: cover;
+}
+
+
+.inspo-statistic-table {
+	border-collapse: collapse;
+	width: 90%;
+	margin-left: 5%;
+	font-family: 'Martel Sans', sans-serif;
+}
+
+.inspo-statistic-tableRow, 
+.inspo-statistic-tableData,
+.inspo-statistic-tableData-image {
+	vertical-align: center;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+.inspo-statistic-tableData-image {
+	padding-top: 10px;
+	transition: 0.4s;
+}
+
+.inspo-statistic-tableData-image:hover {
+	transform: scale(1.7);
+
+}
+
+
+
+.inspo-statistic-tableRow {
+	transition: 0.25s;
+
+}
+
+.inspo-statistic-tableRow:hover {
+	transform:scale(1.08);
+  	transform-origin:center;
+
+}
+
+.inspo-statistic-tableRow:nth-child(odd) {
+	background-color: #EEEEEE
+}
+
+
+.inspo-statistic-tableHead {
+	background-color: lightgray;
+	height: 50px;
+	font-size: 20px;
+}
+
+/* ========== END OF TABLE STYLING============= */
+
+/* ========== SEARCHBAR STYLING============= */
+
+#myInput {
+	margin-left: 5%;
+	min-width: 300px;
+	padding: 5px;
+	font-size: 18px;
+	margin-bottom: 12px;
+	outline: none;
+
+/* ========== END OF SEARCHBAR STYLING============= */
+
+
+

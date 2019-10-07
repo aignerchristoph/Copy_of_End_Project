@@ -1,0 +1,58 @@
+1) get all categories on landing page (need 9 categories, image link, category title, php link to the pin-page)
+
+SELECT * FROM `categories`;
+
+
+
+2) get all pins, saved by current user (tested on 3 users, returns as expected)
+
+SELECT inspirations.*, userid, firstname, lastname 
+FROM inspirations
+JOIN pins ON fk_inspirationID = inspirationID
+JOIN users ON fk_userid = userid 
+WHERE fk_userid = 1000;
+----------
+'1000' will be replaced for $_SESSION['user']
+
+
+
+3) get all the information about current user to check the user/admin
+
+SELECT * FROM `users` WHERE userid = 1000; 
+----------
+'1000' will be replaced for $_SESSION['user']
+
+
+
+4) get all available pins for specific category
+
+SELECT * FROM inspirations WHERE fk_categ_name = 'kitchen';
+----------
+'kitchen' will be replaced for value of $_GET / $_POST ?
+
+
+5) pinpage show several categories based on active filter buton ?
+
+SELECT * FROM inspirations WHERE fk_categ_name = 'kitchen' OR fk_categ_name = 'bath' ORDER BY fk_categ_name;
+----------
+'kitchen' will be replaced for value of $_GET / $_POST ?
+
+
+
+6) get all categories that are saved by a specific user (to render the filter buttons on SAVED pins)
+
+SELECT DISTINCT fk_categ_name
+FROM inspirations
+JOIN pins ON fk_inspirationID = inspirationID 
+JOIN users ON fk_userid = userid 
+WHERE fk_userid = 1002;
+----------
+'1002' will be replaced for for $_SESSION['user']
+
+
+7) 
+SELECT inspirations.*, userid, concat(firstname, ' ', lastname) as customer 
+FROM inspirations
+JOIN pins ON fk_inspirationID = inspirationID 
+JOIN users ON fk_userid = userid 
+WHERE fk_userid = 1002;

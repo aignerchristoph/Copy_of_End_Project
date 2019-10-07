@@ -1,0 +1,93 @@
+.inspo-pinpage-maincontainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+}
+
+.inspo-pinpage-container-one, .inspo-pinpage-container-two, .inspo-pinpage-container-three {
+	height: 2000px;
+	width: 30%;
+	margin: 15px;
+	position: relative;
+}
+
+.inspo-pinpage-container-three:hover .fa-lightbulb {
+	opacity: 1;
+}
+
+.inspo-pinpage-column-one, .inspo-pinpage-column-two, .inspo-pinpage-column-three {
+	height: 500px;
+	width: 100%;
+	margin-top: 30px;
+	position: relative;
+}
+
+.height-one {
+	height: 550px;
+}
+
+.height-two {
+	height: 300px;
+} 
+
+.height-three {
+	height: 500px; 
+}
+
+.inspoimg {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+
+}
+
+
+.inspo-pinpage-categories {
+background-color: darkgrey;
+  color: white;
+  font-size: 16px;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+  outline: none;
+  transition: background 0.2s ease;
+
+}
+
+.inspo-pinpage-categories-active {
+	background-color: #2a2a2a;
+	transition: background 0.2s ease;
+}
+
+
+
+/*lightbulb*/
+.off {
+	font-size: 50px;
+	color: #E61F2F;
+	transition: 0.2s ease;
+}
+
+/* class when its active */
+.lightbulbIconOn {
+	color: #FFEF00;
+}
+
+.fa-lightbulb {
+	position: absolute;
+  	top: 3%;
+  	right: 3%;
+  	opacity: 0;
+}
+
+
+.off:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}

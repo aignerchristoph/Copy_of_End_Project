@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+}
+
+.inspo-landing-mainContainer {
+	margin: 5%;
+}
+
+.inspo-landing-mainContainer h1 {
+	font-size: 25px;
+}
+
+.inspo-landing-flexContainer {
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.inspo-landing-big {
+	position: relative;
+	margin-bottom: 3%;
+	cursor: pointer;
+	width: 48.5%;
+}
+
+.inspo-landing-small {
+	position: relative;
+	margin-bottom: 3%;
+	cursor: pointer;
+	width: 23%;
+}
+
+.inspo-landing-itemName {
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+}
+
+.inspo-landing-image {
+	width: 100%;
+	height: 25vw;
+	object-fit: cover;
+}
+
+
+/* Media Query for Tablet  */ 
+@media screen and (min-width: 481px) and (max-width: 779px) { 
+
+	.inspo-landing-big {
+		width: 100%;
+		margin-bottom: 2%;
+	}
+
+	.inspo-landing-small {
+		width: 48.5%;
+		margin-bottom: 2%;
+	}
+} 
+
+/* Media Query for Phone */ 
+@media only screen and (max-width: 480px) { 
+
+	.inspo-landing-big {
+		width: 100%;
+		margin-bottom: 2%;
+	}
+
+	.inspo-landing-small {
+		width: 100%;
+		margin-bottom: 2%;
+	}
+
+} 
+
+
+
